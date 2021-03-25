@@ -1,0 +1,16 @@
+{
+  "name": "alfred-grafana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "alfy": "^0.10.0",
+    "lodash": "^4.17.21",
+    "alfred-link": "^0.3.1"
+  },
+  "scripts": {
+    "postinstall": "alfred-link",
+    "preuninstall": "alfred-unlink",
+    "alfredPackage": "rm -f zip alfred-grafana.alfredworkflow && zip alfred-grafana.alfredworkflow ./* -x@alfred_package.ignore"
+  }
+}
